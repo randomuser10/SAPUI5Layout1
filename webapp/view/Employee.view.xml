@@ -1,21 +1,34 @@
 <mvc:View controllerName="emplayout.emplayout.controller.Employee"
     xmlns:mvc="sap.ui.core.mvc"
     xmlns="sap.m" xmlns:layout="sap.ui.layout">
-    <Page id="page" title="Employee Details">
+    <Page id="page" title="Employee Details" titleAlignment="Center">
         <content>
-            <layout:Grid id="Grid1" defaultSpan="XL6 L6 M6 S12">
-             <Label id="idLabelEid" text="Employee Id"></Label>
-             <Input id="idIpEid"></Input>
-             <Label id="idLabelEname" text="Employee Name"></Label>
-             <Input id="idIpEname"></Input>
-             <Label id="idLabelEDes" text="Employee Id"></Label>
-             <Input id="idIpEDesi"></Input>
-             <Label id="idLabelESkill" text="Employee Id"></Label>
-             <Input id="idIpESkill"></Input>
-             <Label id="idLabelEmail" text="Employee Id"></Label>
-             <Input id="idIpEmail"></Input>
-            
-            </layout:Grid>
+        <!-- Employee Detais -->
+            <Panel id="idPEmpdet" headerText="Employee Details" expandable="true" expanded="true">
+                <layout:Grid id="Grid1" defaultSpan="XL6 L6 M6 S12" vSpacing="0">
+                    <Label id="idLabelEid" text="Employee Id" class = "sapUiTinyMarginTop"></Label>
+                    <Input id="idIpEid"  class = "sapUiTinyMarginTop"></Input>
+                    <Label id="idLabelEname" text="Employee Name" class = "sapUiTinyMarginTop"></Label>
+                    <Input id="idIpEname" class = "sapUiTinyMarginTop"></Input>
+                    <Label id="idLabelEDes" text="Employee Designation" class = "sapUiTinyMarginTop"></Label>
+                    <Input id="idIpEDesi" class = "sapUiTinyMarginTop"></Input>
+                    <Label id="idLabelESkill" text="Employee Skills" class = "sapUiTinyMarginTop"></Label>
+                    <Input id="idIpESkill" class = "sapUiTinyMarginTop"></Input>
+                    <Label id="idLabelEmail" text="Employee Email" class = "sapUiTinyMarginTop"></Label>
+                    <Input id="idIpEmail" class = "sapUiTinyMarginTop"></Input>                    
+                </layout:Grid>
+                <!-- Employee Personal Details -->
+            </Panel>
+            <Panel id="idPPerDet" headerText="Personal Details" expandable="true">
+                <layout:Grid id="idGFamDet" defaultSpan="XL3 L3 M6 S12" vSpacing="0">
+                    <Label id="idLEName" text="Employee Name" class = "sapUiTinyMarginTop"></Label>
+                    <Input id="idIpEName" class= "sapUiTinyMarginTop"></Input>
+                    <Label id="idLEAdd" text="Employee Address" class= "sapUiTinyMarginTop"></Label>
+                    <Input id="idIpEAdd" class= "sapUiTinyMarginTop"></Input>
+                    <Label id="idLEDob" text="Date of Birth" class= "sapUiTinyMarginTop"></Label>
+                    <Input id="idIpEDob" class= "sapUiTinyMarginTop"></Input>
+                </layout:Grid>
+            </Panel>
         </content>
     </Page>
 </mvc:View>
