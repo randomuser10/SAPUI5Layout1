@@ -1,0 +1,21 @@
+<mvc:View controllerName="emplayout.emplayout.controller.Employee"
+    xmlns:mvc="sap.ui.core.mvc"
+    xmlns="sap.m" xmlns:layout="sap.ui.layout">
+    <Page id="page" title="Employee Details">
+        <content>
+            <layout:Grid id="Grid1" defaultSpan="XL6 L6 M6 S12">
+             <Label id="idLabelEid" text="Employee Id"></Label>
+             <Input id="idIpEid"></Input>
+             <Label id="idLabelEname" text="Employee Name"></Label>
+             <Input id="idIpEname"></Input>
+             <Label id="idLabelEDes" text="Employee Id"></Label>
+             <Input id="idIpEDesi"></Input>
+             <Label id="idLabelESkill" text="Employee Id"></Label>
+             <Input id="idIpESkill"></Input>
+             <Label id="idLabelEmail" text="Employee Id"></Label>
+             <Input id="idIpEmail"></Input>
+            
+            </layout:Grid>
+        </content>
+    </Page>
+</mvc:View>
