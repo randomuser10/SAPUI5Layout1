@@ -29,6 +29,44 @@
                     <Input id="idIpEDob" class= "sapUiTinyMarginTop"></Input>
                 </layout:Grid>
             </Panel>
+            <Panel id="idPOther" headerText="Other Details">
+                <layout:Grid id="idGrid3" vSpacing="0">
+                    <Label id="idLEdu" text="Education Details" class= "sapUiTinyMarginTop">
+                        <layoutData>
+                            <layout:GridData id="idG1" span="XL3 L3 M6 S12">
+                            </layout:GridData>
+                        </layoutData>
+                    </Label>
+                    <Input id="idIpEdu" class= "sapUiTinyMarginTop">
+                        <layoutData>
+                            <layout:GridData id="idG2" span="XL9 L9 M9 S12">
+                            </layout:GridData>                    
+                        </layoutData>
+                    </Input>
+                    <Label id="idLPComp" text="Previous Company">
+                        <layoutData>
+                            <layout:GridData id="idGridL2" span="XL3 L3 M3 S12"></layout:GridData>
+                        </layoutData>
+                    </Label>
+                    <Input id="idIpPComp" class= "sapUiTinyMarginTop">
+                        <layoutData>
+                            <layout:GridData id="idGridI2" span="XL3 L3 M3 S12">
+                            </layout:GridData>                    
+                        </layoutData>
+                    </Input>
+                    <Label id="idLDesig" text="Designation" class= "sapUiTinyMarginTop">
+                        <layoutData>
+                            <layout:GridData id="idLGrid1" span="XL3 L3 M3 S12"></layout:GridData>
+                        </layoutData>
+                    </Label>
+                    <Input id="idIpDesig" class="sapUiTinyMarginTop">
+                        <layoutData>
+                            <layout:GridData id="idIGrid1" span="XL3 L3 M3 S12"></layout:GridData>
+                        </layoutData>
+                    </Input>
+                    
+                </layout:Grid>
+            </Panel>
         </content>
     </Page>
 </mvc:View>
